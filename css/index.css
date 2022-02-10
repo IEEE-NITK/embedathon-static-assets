@@ -1,0 +1,50 @@
+.landing-text h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 3.75rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 0 0 15px #22f372;
+    line-height: 70px;
+}
+
+.landing-text h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-shadow: 0 0 15px #22f372;
+}
+
+.landing-text h6 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.4rem;
+    color: #FFFFFF;
+    text-shadow: 0 0 15px #22f372;
+}
+
+.landing-text a {
+    font-family: 'Lato', sans-serif;
+    background-color: #2bb673;
+}
+
+.landing-text a:hover {
+    background-color: #30ca80;
+}
+
+#organizers img {
+    max-width: 250px;
+}
+
+#icons-div {
+    font-size: 2em;
+}
+
+#landing {
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1368px) {
+    #landing {
+        background-size: contain;
+    }
+}
