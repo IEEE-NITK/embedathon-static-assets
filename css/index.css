@@ -31,6 +31,10 @@
     background-color: #30ca80;
 }
 
+.landing-page-text {
+    font-size: 1.5rem !important;
+}
+
 #organizers img {
     max-width: 250px;
 }
@@ -43,8 +47,21 @@
     background-size: cover;
 }
 
+.accordion-button {
+    font-size: 1.5rem !important;
+}
+
 @media only screen and (max-width: 1368px) {
     #landing {
         background-size: contain;
     }
+    
+    .landing-page-text {
+        font-size: 1.2rem !important;
+    }
+    
+    .accordion-button {
+        font-size: 1.2rem !important;
+    }
 }
+
