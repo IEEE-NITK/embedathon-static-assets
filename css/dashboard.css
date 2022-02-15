@@ -1,0 +1,37 @@
+.score {
+    position: relative;
+    height: inherit;
+    width: inherit;
+}
+
+.progress-circle {
+    transform: rotate(-90deg);
+}
+
+.progress-circle-back {
+    fill: none;
+    stroke: #D2D2D2;
+    stroke-width: 10px;
+}
+
+.progress-circle-prog {
+    fill: none;
+    stroke: #0066A1;
+    stroke-width: 10px;
+    stroke-dasharray: 0 999;
+    stroke-dashoffset: 0px;
+    transition: stroke-dasharray 0.7s linear 0s;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2em;
+}
+
+table a {
+    color: #212529;
+}
