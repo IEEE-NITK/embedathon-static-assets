@@ -316,6 +316,16 @@
     }, 200);
   }
 
+  /* Close Alerts after timeout */
+  var alertList = document.querySelectorAll('.alert')
+  alertList.forEach(function (alert) {
+    var bsAlert = new bootstrap.Alert(alert);
+    setTimeout(function () {
+      bsAlert.close()
+    }, 3000);
+  })
+
+
   /* Animate box */
   var i = 0;
   $('.animate-box').waypoint(function (direction) {
