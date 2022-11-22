@@ -1082,3 +1082,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
   color: #0e322b;
 }
+
+.btn-theme {
+  background: #439861;
+  color: white;
+}
