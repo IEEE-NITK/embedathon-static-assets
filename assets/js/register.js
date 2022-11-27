@@ -19,3 +19,17 @@ function checkFormValidity(form) {
 
     return true;
 }
+
+let currentCollege = "";
+
+function NITKToggle(checkbox) {
+    const college = document.getElementById('college');
+    if (checkbox.checked) {
+        currentCollege = college.value;
+        college.value = 'NITK, Surathkal';
+        college.readOnly = true;
+    } else {
+        college.value = currentCollege;
+        college.readOnly = false;
+    }
+}
