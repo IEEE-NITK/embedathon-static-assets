@@ -2,6 +2,7 @@ function checkFormValidity(form) {
     password = form.password.value;
     confirmation = form.confirmation.value;
     phone = form.phone.value.toString();
+    email = form.email.value;
 
     if (phone.toString().length < 10) {
         form.phone.setCustomValidity("Phone number must be 10 digits");
@@ -16,6 +17,24 @@ function checkFormValidity(form) {
     }
     form.password.setCustomValidity('');
     form.confirmation.setCustomValidity('');
+
+    if (document.getElementById("is_nitk").checked) {
+        let nitkRegex = /^[A-Za-z0-9._%+-]+@nitk\.edu\.in$/;
+        if (!nitkRegex.test(email)) {
+            document.getElementById("emailError").textContent = "Provide a valid NITK EDU Email ID!";
+            form.email.setCustomValidity("Not a NITK EMAIL ID");
+            return false;
+        }
+    }
+    else {
+        let mailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+        if (!mailRegex.test(email)) {
+            document.getElementById("emailError").textContent = "Provide a valid Email ID!";
+            form.email.setCustomValidity("Not a valid email id");
+            return false;
+        }
+    }
+    form.email.setCustomValidity('');
 
     return true;
 }
